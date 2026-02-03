@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  background: #0a867c;
+}
+
+/* Form layout using Flexbox */
+.form-container {
+  width: 300px;
+  background: rgb(18, 206, 118);
+  margin: 100px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container input,
+.form-container button {
+  margin: 8px 0;
+  padding: 10px;
+}
+
+.form-container button {
+  background: #007bff;
+  color: rgb(204, 28, 28);
+  border: none;
+}
+
+/* Catalog grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  background: rgb(214, 17, 17);
+  padding: 15px;
+  text-align: center;
+}
+
+/* Cart using Flexbox */
+.cart-container {
+  width: 300px;
+  background: rgb(231, 62, 62);
+  margin: auto;
+  padding: 20px;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+/* Common */
+.title {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .form-container,
+  .cart-container {
+    width: 90%;
+  }
+}

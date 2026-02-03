@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <form onsubmit="return validateLogin()">
+      <input type="email" id="email" placeholder="Email">
+      <input type="password" id="password" placeholder="Password">
+      <button type="submit">Login</button>
+      <p>New user? <a href="register.html">Register</a></p>
+    </form>
+  </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Register</h2>
+    <form onsubmit="return validateRegister()">
+      <input type="text" id="name" placeholder="Name">
+      <input type="email" id="regEmail" placeholder="Email">
+      <input type="password" id="regPassword" placeholder="Password">
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Catalog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2 class="title">Product Catalog</h2>
+
+<div class="product-grid">
+  <div class="product-card">
+    <h3>Product 1</h3>
+    <p>₹500</p>
+    <button>Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <h3>Product 2</h3>
+    <p>₹800</p>
+    <button>Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <h3>Product 3</h3>
+    <p>₹1200</p>
+    <button>Add to Cart</button>
+  </div>
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2 class="title">Shopping Cart</h2>
+
+<div class="cart-container">
+  <div class="cart-item">
+    <span>Product 1</span>
+    <span>₹500</span>
+  </div>
+
+  <div class="cart-item">
+    <span>Product 2</span>
+    <span>₹800</span>
+  </div>
+
+  <h3>Total: ₹1300</h3>
+</div>
+
+</body>
+</html>

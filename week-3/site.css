@@ -1,0 +1,37 @@
+/* site.css — uses CSS Grid and Flexbox + small CSS3 touches */
+:root{
+  --accent:#0d6efd;
+  --muted:#f8f9fa;
+}
+body{font-family:Inter, system-ui, Arial, sans-serif; background:var(--muted); color:#222}
+.site-header{box-shadow:0 2px 6px rgba(0,0,0,0.06)}
+/* Product grid: CSS Grid */
+.product-grid{
+  display:grid;
+  gap:1rem;
+  grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+}
+.product-card{
+  display:flex;
+  flex-direction:column;
+  background:white;
+  border-radius:8px;
+  overflow:hidden;
+  box-shadow:0 4px 10px rgba(0,0,0,0.05);
+  transition:transform .15s ease, box-shadow .15s ease;
+}
+.product-card:hover{transform:translateY(-6px); box-shadow:0 8px 20px rgba(0,0,0,0.08)}
+.product-card img{width:100%; height:160px; object-fit:cover}
+.product-body{padding:1rem; display:flex; flex-direction:column; gap:.5rem}
+.product-title{font-weight:600}
+.product-meta{margin-top:auto; display:flex; align-items:center; justify-content:space-between}
+.price{color:var(--accent); font-weight:700}
+.btn-add{flex-shrink:0}
+/* Responsive tweaks */
+@media (max-width:576px){
+  .product-card img{height:140px}
+}
+/* Forms */
+.auth-form{max-width:480px}
+/* Badge for small cart count */
+#cart-count{vertical-align:middle}
